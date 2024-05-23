@@ -1,0 +1,30 @@
+000 (121337.000.000) 2024-03-20 10:36:02 Job submitted from host: <130.209.45.81:9618?addrs=130.209.45.81-9618&alias=wiay.astro.gla.ac.uk&noUDP&sock=schedd_7258_f678>
+...
+001 (121337.000.000) 2024-03-20 10:36:03 Job executing on host: <130.209.45.226:9618?addrs=130.209.45.226-9618&alias=muck.physics.gla.ac.uk&noUDP&sock=startd_1061008_d0cc>
+...
+006 (121337.000.000) 2024-03-20 10:36:11 Image size of job updated: 134900
+	132  -  MemoryUsage of job (MB)
+	134480  -  ResidentSetSize of job (KB)
+...
+006 (121337.000.000) 2024-03-20 10:43:34 Image size of job updated: 188732
+	132  -  MemoryUsage of job (MB)
+	134480  -  ResidentSetSize of job (KB)
+...
+005 (121337.000.000) 2024-03-20 10:43:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:07:26, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:07:26, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :     1     1048576   1675166 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   132        1024      1024 
+
+	Job terminated of its own accord at 2024-03-20T10:43:34Z with exit-code 0.
+...

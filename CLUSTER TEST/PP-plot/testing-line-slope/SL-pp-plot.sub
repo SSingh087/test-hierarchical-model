@@ -1,0 +1,20 @@
+log = log.log
+error = error.err
+output = output.out
+
+# Email notifications
+notify_user = s.singh.3@research.gla.ac.uk
+notification = Always
+
+# Executable and arguments here 
+executable = run.sh
+arguments = SL-pp-plot.py
+getenv = True
+
+# Resource requirements
+request_cpus = 1
+request_memory = 2GB
+request_disk = 2GB
+
+# Number of jobs
+queue 1

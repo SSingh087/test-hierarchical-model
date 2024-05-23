@@ -1,0 +1,280 @@
+/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py:9: DeprecationWarning: 
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+        
+  import pandas as pd
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+Traceback (most recent call last):
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 624, in __call__
+    return self.f(x, *self.args, **self.kwargs)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 40, in log_probability
+    log_prior_val = log_hyperprior(params)
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 30, in log_hyperprior
+    parent_mean, parent_scale = params
+ValueError: not enough values to unpack (expected 2, got 1)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/2673888s/test/script/PP-plot/EMCEE/Single-Gaussian/fixed_mu_test/Single-Gaussian-pp-plot.py", line 64, in <module>
+    sampler.run_mcmc(pos, 3000, progress=True)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 443, in run_mcmc
+    for results in self.sample(initial_state, iterations=nsteps, **kwargs):
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 344, in sample
+    state.log_prob, state.blobs = self.compute_log_prob(state.coords)
+  File "/home/2673888s/test/testHM/lib/python3.9/site-packages/emcee/ensemble.py", line 489, in compute_log_prob
+    results = list(map_func(self.log_prob_fn, p))
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/lib/python3.9/multiprocessing/pool.py", line 771, in get
+    raise self._value
+ValueError: not enough values to unpack (expected 2, got 1)

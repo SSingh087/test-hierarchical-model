@@ -1,0 +1,20 @@
+log = LOG_FILES/log_$(n_event).log
+error = LOG_FILES/error_$(n_event).err
+output = LOG_FILES/output_$(n_event).out
+getenv = True
+
+# Email notifications
+notify_user = s.singh.3@research.gla.ac.uk
+notification = Always
+
+# Executable and arguments here 
+executable = run.sh
+arguments = Single-Gaussian-pp-plot.py --n_event $(n_event) --mu_p_low 0 --mu_p_high 5 --sigma_p_low 0.2 --sigma_p_high 0.9
+
+# Resource requirements
+request_cpus = 1
+request_memory = 1GB
+request_disk = 2GB
+
+# Number of jobs
+queue 1

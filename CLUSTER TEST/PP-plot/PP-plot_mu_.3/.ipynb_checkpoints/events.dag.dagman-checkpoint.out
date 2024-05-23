@@ -1,0 +1,1434 @@
+03/21/24 12:05:41 ******************************************************
+03/21/24 12:05:41 ** condor_scheduniv_exec.121967.0 (CONDOR_DAGMAN) STARTING UP
+03/21/24 12:05:41 ** /usr/bin/condor_dagman
+03/21/24 12:05:41 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+03/21/24 12:05:41 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+03/21/24 12:05:41 ** $CondorVersion: 10.3.0 2023-03-06 BuildID: 632984 PackageID: 10.3.0-1 $
+03/21/24 12:05:41 ** $CondorPlatform: X86_64-Debian_11 $
+03/21/24 12:05:41 ** PID = 574775
+03/21/24 12:05:41 ** Log last touched time unavailable (No such file or directory)
+03/21/24 12:05:41 ******************************************************
+03/21/24 12:05:41 Using config source: /etc/condor/condor_config
+03/21/24 12:05:41 Using local config sources: 
+03/21/24 12:05:41    /etc/condor/config.d/00-astro.conf
+03/21/24 12:05:41    /etc/condor/config.d/00-htcondor-9.0.config
+03/21/24 12:05:41    /etc/condor/config.d/01-centralmanager.conf
+03/21/24 12:05:41    /etc/condor/config.d/02-executenode.conf
+03/21/24 12:05:41    /etc/condor/config.d/10-gpu-discovery.conf
+03/21/24 12:05:41    /etc/condor/config.d/20singularity
+03/21/24 12:05:41    /etc/condor/config.d/wiay.conf
+03/21/24 12:05:41    /etc/condor/condor_config.local
+03/21/24 12:05:41 config Macros = 109, Sorted = 109, StringBytes = 3830, TablesBytes = 4028
+03/21/24 12:05:41 CLASSAD_CACHING is ENABLED
+03/21/24 12:05:41 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+03/21/24 12:05:41 DaemonCore: No command port requested.
+03/21/24 12:05:41 DAGMAN_USE_STRICT setting: 1
+03/21/24 12:05:41 DAGMAN_VERBOSITY setting: 3
+03/21/24 12:05:41 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+03/21/24 12:05:41 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+03/21/24 12:05:41 DAGMAN_SUBMIT_DELAY setting: 0
+03/21/24 12:05:41 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+03/21/24 12:05:41 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+03/21/24 12:05:41 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+03/21/24 12:05:41 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+03/21/24 12:05:41 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+03/21/24 12:05:41 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+03/21/24 12:05:41 DAGMAN_DEFAULT_PRIORITY setting: 0
+03/21/24 12:05:41 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+03/21/24 12:05:41 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+03/21/24 12:05:41 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+03/21/24 12:05:41 DAGMAN_RETRY_NODE_FIRST setting: False
+03/21/24 12:05:41 DAGMAN_MAX_JOBS_IDLE setting: 1000
+03/21/24 12:05:41 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+03/21/24 12:05:41 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+03/21/24 12:05:41 DAGMAN_MAX_POST_SCRIPTS setting: 20
+03/21/24 12:05:41 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+03/21/24 12:05:41 DAGMAN_MUNGE_NODE_NAMES setting: True
+03/21/24 12:05:41 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+03/21/24 12:05:41 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+03/21/24 12:05:41 DAGMAN_ALWAYS_RUN_POST setting: False
+03/21/24 12:05:41 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+03/21/24 12:05:41 DAGMAN_USE_DIRECT_SUBMIT setting: True
+03/21/24 12:05:41 DAGMAN_DEFAULT_APPEND_VARS setting: False
+03/21/24 12:05:41 DAGMAN_ABORT_DUPLICATES setting: True
+03/21/24 12:05:41 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+03/21/24 12:05:41 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+03/21/24 12:05:41 DAGMAN_AUTO_RESCUE setting: True
+03/21/24 12:05:41 DAGMAN_MAX_RESCUE_NUM setting: 100
+03/21/24 12:05:41 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+03/21/24 12:05:41 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+03/21/24 12:05:41 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+03/21/24 12:05:41 DAGMAN_MAX_JOB_HOLDS setting: 100
+03/21/24 12:05:41 DAGMAN_HOLD_CLAIM_TIME setting: 20
+03/21/24 12:05:41 ALL_DEBUG setting: 
+03/21/24 12:05:41 DAGMAN_DEBUG setting: 
+03/21/24 12:05:41 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+03/21/24 12:05:41 DAGMAN_REMOVE_NODE_JOBS setting: True
+03/21/24 12:05:41 DAGMAN will adjust edges after parsing
+03/21/24 12:05:41 argv[0] == "condor_scheduniv_exec.121967.0"
+03/21/24 12:05:41 argv[1] == "-Lockfile"
+03/21/24 12:05:41 argv[2] == "events.dag.lock"
+03/21/24 12:05:41 argv[3] == "-AutoRescue"
+03/21/24 12:05:41 argv[4] == "1"
+03/21/24 12:05:41 argv[5] == "-DoRescueFrom"
+03/21/24 12:05:41 argv[6] == "0"
+03/21/24 12:05:41 argv[7] == "-Dag"
+03/21/24 12:05:41 argv[8] == "events.dag"
+03/21/24 12:05:41 argv[9] == "-Suppress_notification"
+03/21/24 12:05:41 argv[10] == "-CsdVersion"
+03/21/24 12:05:41 argv[11] == "$CondorVersion: 10.3.0 2023-03-06 BuildID: 632984 PackageID: 10.3.0-1 $"
+03/21/24 12:05:41 argv[12] == "-Dagman"
+03/21/24 12:05:41 argv[13] == "/usr/bin/condor_dagman"
+03/21/24 12:05:41 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/21/24 12:05:41 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+03/21/24 12:05:41 Workflow batch-id: <121967.0>
+03/21/24 12:05:41 Workflow batch-name: <events.dag+121967>
+03/21/24 12:05:41 Workflow accounting_group: <>
+03/21/24 12:05:41 Workflow accounting_group_user: <>
+03/21/24 12:05:41 Warning: failed to get attribute DAGNodeName
+03/21/24 12:05:41 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+03/21/24 12:05:41 Default node log file is: </home/2673888s/test/script/PP-plot/./events.dag.nodes.log>
+03/21/24 12:05:41 DAG Lockfile will be written to events.dag.lock
+03/21/24 12:05:41 DAG Input file is events.dag
+03/21/24 12:05:41 Parsing 1 dagfiles
+03/21/24 12:05:41 Parsing events.dag ...
+03/21/24 12:05:41 Adjusting edges
+03/21/24 12:05:41 Dag contains 200 total jobs
+03/21/24 12:05:41 Bootstrapping...
+03/21/24 12:05:41 Number of pre-completed nodes: 0
+03/21/24 12:05:41 MultiLogFiles: truncating log file /home/2673888s/test/script/PP-plot/./events.dag.nodes.log
+03/21/24 12:05:41 DAG status: 0 (DAG_STATUS_OK)
+03/21/24 12:05:41 Of 200 nodes total:
+03/21/24 12:05:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+03/21/24 12:05:41   ===     ===      ===     ===     ===        ===      ===      ===
+03/21/24 12:05:41     0       0        0       0     200          0        0        0
+03/21/24 12:05:41 0 job proc(s) currently held
+03/21/24 12:05:41 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+03/21/24 12:05:41 Registering condor_event_timer...
+03/21/24 12:05:42 Submitting HTCondor Node EVENT_0 job(s)...
+03/21/24 12:05:42 Submitting node EVENT_0 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:42 	assigned HTCondor ID (121968.0.0)
+03/21/24 12:05:42 Submitting HTCondor Node EVENT_1 job(s)...
+03/21/24 12:05:42 Submitting node EVENT_1 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:42 	assigned HTCondor ID (121969.0.0)
+03/21/24 12:05:42 Submitting HTCondor Node EVENT_2 job(s)...
+03/21/24 12:05:42 Submitting node EVENT_2 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:43 	assigned HTCondor ID (121970.0.0)
+03/21/24 12:05:43 Submitting HTCondor Node EVENT_3 job(s)...
+03/21/24 12:05:43 Submitting node EVENT_3 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:43 	assigned HTCondor ID (121971.0.0)
+03/21/24 12:05:43 Submitting HTCondor Node EVENT_4 job(s)...
+03/21/24 12:05:43 Submitting node EVENT_4 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:43 	assigned HTCondor ID (121972.0.0)
+03/21/24 12:05:43 Submitting HTCondor Node EVENT_5 job(s)...
+03/21/24 12:05:43 Submitting node EVENT_5 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:43 	assigned HTCondor ID (121973.0.0)
+03/21/24 12:05:43 Submitting HTCondor Node EVENT_6 job(s)...
+03/21/24 12:05:43 Submitting node EVENT_6 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:43 	assigned HTCondor ID (121974.0.0)
+03/21/24 12:05:43 Submitting HTCondor Node EVENT_7 job(s)...
+03/21/24 12:05:43 Submitting node EVENT_7 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121975.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_8 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_8 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121976.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_9 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_9 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121977.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_10 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_10 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121978.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_11 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_11 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121979.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_12 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_12 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121980.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_13 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_13 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121981.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_14 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_14 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121982.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_15 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_15 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121983.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_16 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_16 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121984.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_17 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_17 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121985.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_18 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_18 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121986.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_19 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_19 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121987.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_20 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_20 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121988.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_21 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_21 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121989.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_22 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_22 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121990.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_23 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_23 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121991.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_24 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_24 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:44 	assigned HTCondor ID (121992.0.0)
+03/21/24 12:05:44 Submitting HTCondor Node EVENT_25 job(s)...
+03/21/24 12:05:44 Submitting node EVENT_25 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121993.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_26 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_26 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121994.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_27 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_27 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121995.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_28 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_28 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121996.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_29 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_29 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121997.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_30 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_30 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121998.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_31 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_31 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (121999.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_32 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_32 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122000.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_33 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_33 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122001.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_34 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_34 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122002.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_35 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_35 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122003.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_36 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_36 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122004.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_37 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_37 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122005.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_38 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_38 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122006.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_39 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_39 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122007.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_40 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_40 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122008.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_41 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_41 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122009.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_42 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_42 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122010.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_43 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_43 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122011.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_44 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_44 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:45 	assigned HTCondor ID (122012.0.0)
+03/21/24 12:05:45 Submitting HTCondor Node EVENT_45 job(s)...
+03/21/24 12:05:45 Submitting node EVENT_45 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:46 	assigned HTCondor ID (122013.0.0)
+03/21/24 12:05:46 Submitting HTCondor Node EVENT_46 job(s)...
+03/21/24 12:05:46 Submitting node EVENT_46 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:46 	assigned HTCondor ID (122014.0.0)
+03/21/24 12:05:46 Submitting HTCondor Node EVENT_47 job(s)...
+03/21/24 12:05:46 Submitting node EVENT_47 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:46 	assigned HTCondor ID (122015.0.0)
+03/21/24 12:05:46 Submitting HTCondor Node EVENT_48 job(s)...
+03/21/24 12:05:46 Submitting node EVENT_48 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122016.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_49 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_49 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122017.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_50 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_50 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122018.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_51 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_51 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122019.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_52 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_52 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122020.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_53 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_53 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122021.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_54 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_54 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122022.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_55 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_55 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122023.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_56 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_56 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122024.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_57 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_57 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122025.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_58 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_58 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122026.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_59 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_59 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122027.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_60 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_60 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:47 	assigned HTCondor ID (122028.0.0)
+03/21/24 12:05:47 Submitting HTCondor Node EVENT_61 job(s)...
+03/21/24 12:05:47 Submitting node EVENT_61 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:48 	assigned HTCondor ID (122029.0.0)
+03/21/24 12:05:48 Warning: Submit cycle elapsed time (6 s) has exceeded log scan interval (5 s); bailing out of submit loop
+03/21/24 12:05:48 Just submitted 62 jobs this cycle...
+03/21/24 12:05:48 DAG status: 0 (DAG_STATUS_OK)
+03/21/24 12:05:48 Of 200 nodes total:
+03/21/24 12:05:48  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+03/21/24 12:05:48   ===     ===      ===     ===     ===        ===      ===      ===
+03/21/24 12:05:48     0       0       62       0     138          0        0        0
+03/21/24 12:05:48 0 job proc(s) currently held
+03/21/24 12:05:48 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 5.202914953231812; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 5.202914953231812; SubmitCycleTimeMin = 5.202914953231812; SubmitCycleTimeStd = 5.202914953231812; SubmitCycleTimeSum = 5.202914953231812; ]
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_62 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_62 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:53 	assigned HTCondor ID (122030.0.0)
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_63 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_63 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:53 	assigned HTCondor ID (122031.0.0)
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_64 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_64 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:53 	assigned HTCondor ID (122032.0.0)
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_65 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_65 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:53 	assigned HTCondor ID (122033.0.0)
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_66 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_66 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:53 	assigned HTCondor ID (122034.0.0)
+03/21/24 12:05:53 Submitting HTCondor Node EVENT_67 job(s)...
+03/21/24 12:05:53 Submitting node EVENT_67 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122035.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_68 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_68 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122036.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_69 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_69 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122037.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_70 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_70 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122038.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_71 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_71 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122039.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_72 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_72 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122040.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_73 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_73 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122041.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_74 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_74 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122042.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_75 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_75 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122043.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_76 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_76 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122044.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_77 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_77 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122045.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_78 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_78 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122046.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_79 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_79 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122047.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_80 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_80 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122048.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_81 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_81 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122049.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_82 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_82 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122050.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_83 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_83 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122051.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_84 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_84 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122052.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_85 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_85 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122053.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_86 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_86 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:54 	assigned HTCondor ID (122054.0.0)
+03/21/24 12:05:54 Submitting HTCondor Node EVENT_87 job(s)...
+03/21/24 12:05:54 Submitting node EVENT_87 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122055.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_88 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_88 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122056.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_89 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_89 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122057.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_90 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_90 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122058.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_91 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_91 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122059.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_92 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_92 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122060.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_93 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_93 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122061.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_94 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_94 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122062.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_95 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_95 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122063.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_96 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_96 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122064.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_97 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_97 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122065.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_98 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_98 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122066.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_99 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_99 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:55 	assigned HTCondor ID (122067.0.0)
+03/21/24 12:05:55 Submitting HTCondor Node EVENT_100 job(s)...
+03/21/24 12:05:55 Submitting node EVENT_100 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:56 	assigned HTCondor ID (122068.0.0)
+03/21/24 12:05:56 Submitting HTCondor Node EVENT_101 job(s)...
+03/21/24 12:05:56 Submitting node EVENT_101 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:56 	assigned HTCondor ID (122069.0.0)
+03/21/24 12:05:56 Submitting HTCondor Node EVENT_102 job(s)...
+03/21/24 12:05:56 Submitting node EVENT_102 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:56 	assigned HTCondor ID (122070.0.0)
+03/21/24 12:05:56 Submitting HTCondor Node EVENT_103 job(s)...
+03/21/24 12:05:56 Submitting node EVENT_103 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122071.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_104 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_104 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122072.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_105 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_105 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122073.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_106 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_106 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122074.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_107 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_107 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122075.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_108 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_108 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122076.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_109 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_109 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122077.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_110 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_110 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122078.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_111 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_111 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122079.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_112 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_112 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122080.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_113 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_113 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122081.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_114 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_114 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122082.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_115 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_115 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122083.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_116 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_116 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122084.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_117 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_117 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122085.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_118 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_118 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122086.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_119 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_119 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122087.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_120 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_120 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122088.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_121 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_121 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122089.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_122 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_122 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122090.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_123 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_123 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122091.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_124 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_124 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:57 	assigned HTCondor ID (122092.0.0)
+03/21/24 12:05:57 Submitting HTCondor Node EVENT_125 job(s)...
+03/21/24 12:05:57 Submitting node EVENT_125 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122093.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_126 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_126 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122094.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_127 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_127 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122095.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_128 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_128 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122096.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_129 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_129 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122097.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_130 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_130 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122098.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_131 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_131 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122099.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_132 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_132 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122100.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_133 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_133 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122101.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_134 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_134 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122102.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_135 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_135 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122103.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_136 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_136 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122104.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_137 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_137 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122105.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_138 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_138 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122106.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_139 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_139 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122107.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_140 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_140 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122108.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_141 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_141 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:58 	assigned HTCondor ID (122109.0.0)
+03/21/24 12:05:58 Submitting HTCondor Node EVENT_142 job(s)...
+03/21/24 12:05:58 Submitting node EVENT_142 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:05:59 	assigned HTCondor ID (122110.0.0)
+03/21/24 12:05:59 Warning: Submit cycle elapsed time (6 s) has exceeded log scan interval (5 s); bailing out of submit loop
+03/21/24 12:05:59 Just submitted 81 jobs this cycle...
+03/21/24 12:05:59 Currently monitoring 1 HTCondor log file(s)
+03/21/24 12:05:59 Reassigning the id of job EVENT_0 from (121968.0.0) to (121968.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_0 (121968.0.0) {03/21/24 12:05:42}
+03/21/24 12:05:59 Number of idle job procs: 1
+03/21/24 12:05:59 Reassigning the id of job EVENT_1 from (121969.0.0) to (121969.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_1 (121969.0.0) {03/21/24 12:05:42}
+03/21/24 12:05:59 Number of idle job procs: 2
+03/21/24 12:05:59 Reassigning the id of job EVENT_2 from (121970.0.0) to (121970.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_2 (121970.0.0) {03/21/24 12:05:42}
+03/21/24 12:05:59 Number of idle job procs: 3
+03/21/24 12:05:59 Reassigning the id of job EVENT_3 from (121971.0.0) to (121971.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_3 (121971.0.0) {03/21/24 12:05:43}
+03/21/24 12:05:59 Number of idle job procs: 4
+03/21/24 12:05:59 Reassigning the id of job EVENT_4 from (121972.0.0) to (121972.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_4 (121972.0.0) {03/21/24 12:05:43}
+03/21/24 12:05:59 Number of idle job procs: 5
+03/21/24 12:05:59 Reassigning the id of job EVENT_5 from (121973.0.0) to (121973.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_5 (121973.0.0) {03/21/24 12:05:43}
+03/21/24 12:05:59 Number of idle job procs: 6
+03/21/24 12:05:59 Reassigning the id of job EVENT_6 from (121974.0.0) to (121974.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_6 (121974.0.0) {03/21/24 12:05:43}
+03/21/24 12:05:59 Number of idle job procs: 7
+03/21/24 12:05:59 Reassigning the id of job EVENT_7 from (121975.0.0) to (121975.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_7 (121975.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 8
+03/21/24 12:05:59 Reassigning the id of job EVENT_8 from (121976.0.0) to (121976.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_8 (121976.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 9
+03/21/24 12:05:59 Reassigning the id of job EVENT_9 from (121977.0.0) to (121977.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_9 (121977.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 10
+03/21/24 12:05:59 Reassigning the id of job EVENT_10 from (121978.0.0) to (121978.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_10 (121978.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 11
+03/21/24 12:05:59 Reassigning the id of job EVENT_11 from (121979.0.0) to (121979.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_11 (121979.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 12
+03/21/24 12:05:59 Reassigning the id of job EVENT_12 from (121980.0.0) to (121980.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_12 (121980.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 13
+03/21/24 12:05:59 Reassigning the id of job EVENT_13 from (121981.0.0) to (121981.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_13 (121981.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 14
+03/21/24 12:05:59 Reassigning the id of job EVENT_14 from (121982.0.0) to (121982.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_14 (121982.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 15
+03/21/24 12:05:59 Reassigning the id of job EVENT_15 from (121983.0.0) to (121983.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_15 (121983.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 16
+03/21/24 12:05:59 Reassigning the id of job EVENT_16 from (121984.0.0) to (121984.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_16 (121984.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 17
+03/21/24 12:05:59 Reassigning the id of job EVENT_17 from (121985.0.0) to (121985.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_17 (121985.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 18
+03/21/24 12:05:59 Reassigning the id of job EVENT_18 from (121986.0.0) to (121986.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_18 (121986.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 19
+03/21/24 12:05:59 Reassigning the id of job EVENT_19 from (121987.0.0) to (121987.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_19 (121987.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 20
+03/21/24 12:05:59 Reassigning the id of job EVENT_20 from (121988.0.0) to (121988.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_20 (121988.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 21
+03/21/24 12:05:59 Reassigning the id of job EVENT_21 from (121989.0.0) to (121989.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_21 (121989.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 22
+03/21/24 12:05:59 Reassigning the id of job EVENT_22 from (121990.0.0) to (121990.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_22 (121990.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 23
+03/21/24 12:05:59 Reassigning the id of job EVENT_23 from (121991.0.0) to (121991.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_23 (121991.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 24
+03/21/24 12:05:59 Reassigning the id of job EVENT_24 from (121992.0.0) to (121992.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_24 (121992.0.0) {03/21/24 12:05:44}
+03/21/24 12:05:59 Number of idle job procs: 25
+03/21/24 12:05:59 Reassigning the id of job EVENT_25 from (121993.0.0) to (121993.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_25 (121993.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 26
+03/21/24 12:05:59 Reassigning the id of job EVENT_26 from (121994.0.0) to (121994.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_26 (121994.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 27
+03/21/24 12:05:59 Reassigning the id of job EVENT_27 from (121995.0.0) to (121995.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_27 (121995.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 28
+03/21/24 12:05:59 Reassigning the id of job EVENT_28 from (121996.0.0) to (121996.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_28 (121996.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 29
+03/21/24 12:05:59 Reassigning the id of job EVENT_29 from (121997.0.0) to (121997.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_29 (121997.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 30
+03/21/24 12:05:59 Reassigning the id of job EVENT_30 from (121998.0.0) to (121998.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_30 (121998.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 31
+03/21/24 12:05:59 Reassigning the id of job EVENT_31 from (121999.0.0) to (121999.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_31 (121999.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 32
+03/21/24 12:05:59 Reassigning the id of job EVENT_32 from (122000.0.0) to (122000.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_32 (122000.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 33
+03/21/24 12:05:59 Reassigning the id of job EVENT_33 from (122001.0.0) to (122001.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_33 (122001.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 34
+03/21/24 12:05:59 Reassigning the id of job EVENT_34 from (122002.0.0) to (122002.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_34 (122002.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 35
+03/21/24 12:05:59 Reassigning the id of job EVENT_35 from (122003.0.0) to (122003.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_35 (122003.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 36
+03/21/24 12:05:59 Reassigning the id of job EVENT_36 from (122004.0.0) to (122004.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_36 (122004.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 37
+03/21/24 12:05:59 Reassigning the id of job EVENT_37 from (122005.0.0) to (122005.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_37 (122005.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 38
+03/21/24 12:05:59 Reassigning the id of job EVENT_38 from (122006.0.0) to (122006.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_38 (122006.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 39
+03/21/24 12:05:59 Reassigning the id of job EVENT_39 from (122007.0.0) to (122007.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_39 (122007.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 40
+03/21/24 12:05:59 Reassigning the id of job EVENT_40 from (122008.0.0) to (122008.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_40 (122008.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 41
+03/21/24 12:05:59 Reassigning the id of job EVENT_41 from (122009.0.0) to (122009.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_41 (122009.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 42
+03/21/24 12:05:59 Reassigning the id of job EVENT_42 from (122010.0.0) to (122010.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_42 (122010.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 43
+03/21/24 12:05:59 Reassigning the id of job EVENT_43 from (122011.0.0) to (122011.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_43 (122011.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 44
+03/21/24 12:05:59 Reassigning the id of job EVENT_44 from (122012.0.0) to (122012.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_44 (122012.0.0) {03/21/24 12:05:45}
+03/21/24 12:05:59 Number of idle job procs: 45
+03/21/24 12:05:59 Reassigning the id of job EVENT_45 from (122013.0.0) to (122013.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_45 (122013.0.0) {03/21/24 12:05:46}
+03/21/24 12:05:59 Number of idle job procs: 46
+03/21/24 12:05:59 Reassigning the id of job EVENT_46 from (122014.0.0) to (122014.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_46 (122014.0.0) {03/21/24 12:05:46}
+03/21/24 12:05:59 Number of idle job procs: 47
+03/21/24 12:05:59 Reassigning the id of job EVENT_47 from (122015.0.0) to (122015.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_47 (122015.0.0) {03/21/24 12:05:46}
+03/21/24 12:05:59 Number of idle job procs: 48
+03/21/24 12:05:59 Reassigning the id of job EVENT_48 from (122016.0.0) to (122016.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_48 (122016.0.0) {03/21/24 12:05:46}
+03/21/24 12:05:59 Number of idle job procs: 49
+03/21/24 12:05:59 Reassigning the id of job EVENT_49 from (122017.0.0) to (122017.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_49 (122017.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 50
+03/21/24 12:05:59 Reassigning the id of job EVENT_50 from (122018.0.0) to (122018.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_50 (122018.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 51
+03/21/24 12:05:59 Reassigning the id of job EVENT_51 from (122019.0.0) to (122019.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_51 (122019.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 52
+03/21/24 12:05:59 Reassigning the id of job EVENT_52 from (122020.0.0) to (122020.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_52 (122020.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 53
+03/21/24 12:05:59 Reassigning the id of job EVENT_53 from (122021.0.0) to (122021.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_53 (122021.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 54
+03/21/24 12:05:59 Reassigning the id of job EVENT_54 from (122022.0.0) to (122022.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_54 (122022.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 55
+03/21/24 12:05:59 Reassigning the id of job EVENT_55 from (122023.0.0) to (122023.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_55 (122023.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 56
+03/21/24 12:05:59 Reassigning the id of job EVENT_56 from (122024.0.0) to (122024.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_56 (122024.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 57
+03/21/24 12:05:59 Reassigning the id of job EVENT_57 from (122025.0.0) to (122025.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_57 (122025.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 58
+03/21/24 12:05:59 Reassigning the id of job EVENT_58 from (122026.0.0) to (122026.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_58 (122026.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 59
+03/21/24 12:05:59 Reassigning the id of job EVENT_59 from (122027.0.0) to (122027.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_59 (122027.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 60
+03/21/24 12:05:59 Reassigning the id of job EVENT_60 from (122028.0.0) to (122028.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_60 (122028.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 61
+03/21/24 12:05:59 Reassigning the id of job EVENT_61 from (122029.0.0) to (122029.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_61 (122029.0.0) {03/21/24 12:05:47}
+03/21/24 12:05:59 Number of idle job procs: 62
+03/21/24 12:05:59 Reassigning the id of job EVENT_62 from (122030.0.0) to (122030.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_62 (122030.0.0) {03/21/24 12:05:53}
+03/21/24 12:05:59 Number of idle job procs: 63
+03/21/24 12:05:59 Reassigning the id of job EVENT_63 from (122031.0.0) to (122031.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_63 (122031.0.0) {03/21/24 12:05:53}
+03/21/24 12:05:59 Number of idle job procs: 64
+03/21/24 12:05:59 Reassigning the id of job EVENT_64 from (122032.0.0) to (122032.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_64 (122032.0.0) {03/21/24 12:05:53}
+03/21/24 12:05:59 Number of idle job procs: 65
+03/21/24 12:05:59 Reassigning the id of job EVENT_65 from (122033.0.0) to (122033.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_65 (122033.0.0) {03/21/24 12:05:53}
+03/21/24 12:05:59 Number of idle job procs: 66
+03/21/24 12:05:59 Reassigning the id of job EVENT_66 from (122034.0.0) to (122034.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_66 (122034.0.0) {03/21/24 12:05:53}
+03/21/24 12:05:59 Number of idle job procs: 67
+03/21/24 12:05:59 Reassigning the id of job EVENT_67 from (122035.0.0) to (122035.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_67 (122035.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 68
+03/21/24 12:05:59 Reassigning the id of job EVENT_68 from (122036.0.0) to (122036.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_68 (122036.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 69
+03/21/24 12:05:59 Reassigning the id of job EVENT_69 from (122037.0.0) to (122037.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_69 (122037.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 70
+03/21/24 12:05:59 Reassigning the id of job EVENT_70 from (122038.0.0) to (122038.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_70 (122038.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 71
+03/21/24 12:05:59 Reassigning the id of job EVENT_71 from (122039.0.0) to (122039.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_71 (122039.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 72
+03/21/24 12:05:59 Reassigning the id of job EVENT_72 from (122040.0.0) to (122040.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_72 (122040.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 73
+03/21/24 12:05:59 Reassigning the id of job EVENT_73 from (122041.0.0) to (122041.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_73 (122041.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 74
+03/21/24 12:05:59 Reassigning the id of job EVENT_74 from (122042.0.0) to (122042.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_74 (122042.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 75
+03/21/24 12:05:59 Reassigning the id of job EVENT_75 from (122043.0.0) to (122043.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_75 (122043.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 76
+03/21/24 12:05:59 Reassigning the id of job EVENT_76 from (122044.0.0) to (122044.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_76 (122044.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 77
+03/21/24 12:05:59 Reassigning the id of job EVENT_77 from (122045.0.0) to (122045.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_77 (122045.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 78
+03/21/24 12:05:59 Reassigning the id of job EVENT_78 from (122046.0.0) to (122046.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_78 (122046.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 79
+03/21/24 12:05:59 Reassigning the id of job EVENT_79 from (122047.0.0) to (122047.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_79 (122047.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 80
+03/21/24 12:05:59 Reassigning the id of job EVENT_80 from (122048.0.0) to (122048.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_80 (122048.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 81
+03/21/24 12:05:59 Reassigning the id of job EVENT_81 from (122049.0.0) to (122049.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_81 (122049.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 82
+03/21/24 12:05:59 Reassigning the id of job EVENT_82 from (122050.0.0) to (122050.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_82 (122050.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 83
+03/21/24 12:05:59 Reassigning the id of job EVENT_83 from (122051.0.0) to (122051.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_83 (122051.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 84
+03/21/24 12:05:59 Reassigning the id of job EVENT_84 from (122052.0.0) to (122052.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_84 (122052.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 85
+03/21/24 12:05:59 Reassigning the id of job EVENT_85 from (122053.0.0) to (122053.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_85 (122053.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 86
+03/21/24 12:05:59 Reassigning the id of job EVENT_86 from (122054.0.0) to (122054.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_86 (122054.0.0) {03/21/24 12:05:54}
+03/21/24 12:05:59 Number of idle job procs: 87
+03/21/24 12:05:59 Reassigning the id of job EVENT_87 from (122055.0.0) to (122055.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_87 (122055.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 88
+03/21/24 12:05:59 Reassigning the id of job EVENT_88 from (122056.0.0) to (122056.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_88 (122056.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 89
+03/21/24 12:05:59 Reassigning the id of job EVENT_89 from (122057.0.0) to (122057.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_89 (122057.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 90
+03/21/24 12:05:59 Reassigning the id of job EVENT_90 from (122058.0.0) to (122058.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_90 (122058.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 91
+03/21/24 12:05:59 Reassigning the id of job EVENT_91 from (122059.0.0) to (122059.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_91 (122059.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 92
+03/21/24 12:05:59 Reassigning the id of job EVENT_92 from (122060.0.0) to (122060.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_92 (122060.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 93
+03/21/24 12:05:59 Reassigning the id of job EVENT_93 from (122061.0.0) to (122061.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_93 (122061.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 94
+03/21/24 12:05:59 Reassigning the id of job EVENT_94 from (122062.0.0) to (122062.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_94 (122062.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 95
+03/21/24 12:05:59 Reassigning the id of job EVENT_95 from (122063.0.0) to (122063.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_95 (122063.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 96
+03/21/24 12:05:59 Reassigning the id of job EVENT_96 from (122064.0.0) to (122064.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_96 (122064.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 97
+03/21/24 12:05:59 Reassigning the id of job EVENT_97 from (122065.0.0) to (122065.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_97 (122065.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 98
+03/21/24 12:05:59 Reassigning the id of job EVENT_98 from (122066.0.0) to (122066.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_98 (122066.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 99
+03/21/24 12:05:59 Reassigning the id of job EVENT_99 from (122067.0.0) to (122067.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_99 (122067.0.0) {03/21/24 12:05:55}
+03/21/24 12:05:59 Number of idle job procs: 100
+03/21/24 12:05:59 Reassigning the id of job EVENT_100 from (122068.0.0) to (122068.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_100 (122068.0.0) {03/21/24 12:05:56}
+03/21/24 12:05:59 Number of idle job procs: 101
+03/21/24 12:05:59 Reassigning the id of job EVENT_101 from (122069.0.0) to (122069.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_101 (122069.0.0) {03/21/24 12:05:56}
+03/21/24 12:05:59 Number of idle job procs: 102
+03/21/24 12:05:59 Reassigning the id of job EVENT_102 from (122070.0.0) to (122070.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_102 (122070.0.0) {03/21/24 12:05:56}
+03/21/24 12:05:59 Number of idle job procs: 103
+03/21/24 12:05:59 Reassigning the id of job EVENT_103 from (122071.0.0) to (122071.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_103 (122071.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 104
+03/21/24 12:05:59 Reassigning the id of job EVENT_104 from (122072.0.0) to (122072.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_104 (122072.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 105
+03/21/24 12:05:59 Reassigning the id of job EVENT_105 from (122073.0.0) to (122073.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_105 (122073.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 106
+03/21/24 12:05:59 Reassigning the id of job EVENT_106 from (122074.0.0) to (122074.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_106 (122074.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 107
+03/21/24 12:05:59 Reassigning the id of job EVENT_107 from (122075.0.0) to (122075.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_107 (122075.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 108
+03/21/24 12:05:59 Reassigning the id of job EVENT_108 from (122076.0.0) to (122076.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_108 (122076.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 109
+03/21/24 12:05:59 Reassigning the id of job EVENT_109 from (122077.0.0) to (122077.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_109 (122077.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 110
+03/21/24 12:05:59 Reassigning the id of job EVENT_110 from (122078.0.0) to (122078.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_110 (122078.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 111
+03/21/24 12:05:59 Reassigning the id of job EVENT_111 from (122079.0.0) to (122079.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_111 (122079.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 112
+03/21/24 12:05:59 Reassigning the id of job EVENT_112 from (122080.0.0) to (122080.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_112 (122080.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 113
+03/21/24 12:05:59 Reassigning the id of job EVENT_113 from (122081.0.0) to (122081.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_113 (122081.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 114
+03/21/24 12:05:59 Reassigning the id of job EVENT_114 from (122082.0.0) to (122082.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_114 (122082.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 115
+03/21/24 12:05:59 Reassigning the id of job EVENT_115 from (122083.0.0) to (122083.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_115 (122083.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 116
+03/21/24 12:05:59 Reassigning the id of job EVENT_116 from (122084.0.0) to (122084.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_116 (122084.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 117
+03/21/24 12:05:59 Reassigning the id of job EVENT_117 from (122085.0.0) to (122085.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_117 (122085.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 118
+03/21/24 12:05:59 Reassigning the id of job EVENT_118 from (122086.0.0) to (122086.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_118 (122086.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 119
+03/21/24 12:05:59 Reassigning the id of job EVENT_119 from (122087.0.0) to (122087.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_119 (122087.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 120
+03/21/24 12:05:59 Reassigning the id of job EVENT_120 from (122088.0.0) to (122088.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_120 (122088.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 121
+03/21/24 12:05:59 Reassigning the id of job EVENT_121 from (122089.0.0) to (122089.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_121 (122089.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 122
+03/21/24 12:05:59 Reassigning the id of job EVENT_122 from (122090.0.0) to (122090.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_122 (122090.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 123
+03/21/24 12:05:59 Reassigning the id of job EVENT_123 from (122091.0.0) to (122091.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_123 (122091.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 124
+03/21/24 12:05:59 Reassigning the id of job EVENT_124 from (122092.0.0) to (122092.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_124 (122092.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 125
+03/21/24 12:05:59 Reassigning the id of job EVENT_125 from (122093.0.0) to (122093.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_125 (122093.0.0) {03/21/24 12:05:57}
+03/21/24 12:05:59 Number of idle job procs: 126
+03/21/24 12:05:59 Reassigning the id of job EVENT_126 from (122094.0.0) to (122094.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_126 (122094.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 127
+03/21/24 12:05:59 Reassigning the id of job EVENT_127 from (122095.0.0) to (122095.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_127 (122095.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 128
+03/21/24 12:05:59 Reassigning the id of job EVENT_128 from (122096.0.0) to (122096.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_128 (122096.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 129
+03/21/24 12:05:59 Reassigning the id of job EVENT_129 from (122097.0.0) to (122097.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_129 (122097.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 130
+03/21/24 12:05:59 Reassigning the id of job EVENT_130 from (122098.0.0) to (122098.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_130 (122098.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 131
+03/21/24 12:05:59 Reassigning the id of job EVENT_131 from (122099.0.0) to (122099.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_131 (122099.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 132
+03/21/24 12:05:59 Reassigning the id of job EVENT_132 from (122100.0.0) to (122100.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_132 (122100.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 133
+03/21/24 12:05:59 Reassigning the id of job EVENT_133 from (122101.0.0) to (122101.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_133 (122101.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 134
+03/21/24 12:05:59 Reassigning the id of job EVENT_134 from (122102.0.0) to (122102.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_134 (122102.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 135
+03/21/24 12:05:59 Reassigning the id of job EVENT_135 from (122103.0.0) to (122103.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_135 (122103.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 136
+03/21/24 12:05:59 Reassigning the id of job EVENT_136 from (122104.0.0) to (122104.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_136 (122104.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 137
+03/21/24 12:05:59 Reassigning the id of job EVENT_137 from (122105.0.0) to (122105.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_137 (122105.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 138
+03/21/24 12:05:59 Reassigning the id of job EVENT_138 from (122106.0.0) to (122106.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_138 (122106.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 139
+03/21/24 12:05:59 Reassigning the id of job EVENT_139 from (122107.0.0) to (122107.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_139 (122107.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 140
+03/21/24 12:05:59 Reassigning the id of job EVENT_140 from (122108.0.0) to (122108.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_140 (122108.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 141
+03/21/24 12:05:59 Reassigning the id of job EVENT_141 from (122109.0.0) to (122109.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_141 (122109.0.0) {03/21/24 12:05:58}
+03/21/24 12:05:59 Number of idle job procs: 142
+03/21/24 12:05:59 Reassigning the id of job EVENT_142 from (122110.0.0) to (122110.0.0)
+03/21/24 12:05:59 Event: ULOG_SUBMIT for HTCondor Node EVENT_142 (122110.0.0) {03/21/24 12:05:59}
+03/21/24 12:05:59 Number of idle job procs: 143
+03/21/24 12:05:59 DAG status: 0 (DAG_STATUS_OK)
+03/21/24 12:05:59 Of 200 nodes total:
+03/21/24 12:05:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+03/21/24 12:05:59   ===     ===      ===     ===     ===        ===      ===      ===
+03/21/24 12:05:59     0       0      143       0      57          0        0        0
+03/21/24 12:05:59 0 job proc(s) currently held
+03/21/24 12:05:59 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 5.203223943710327; EventCycleTimeCount = 1.0; EventCycleTimeMax = 5.203223943710327; EventCycleTimeMin = 5.203223943710327; EventCycleTimeStd = 5.203223943710327; EventCycleTimeSum = 5.203223943710327; LogProcessCycleTimeAvg = 0.05556797981262207; LogProcessCycleTimeCount = 1.0; LogProcessCycleTimeMax = 0.05556797981262207; LogProcessCycleTimeMin = 0.05556797981262207; LogProcessCycleTimeStd = 0.05556797981262207; LogProcessCycleTimeSum = 0.05556797981262207; SleepCycleTimeAvg = 5.005161046981812; SleepCycleTimeCount = 1.0; SleepCycleTimeMax = 5.005161046981812; SleepCycleTimeMin = 5.005161046981812; SleepCycleTimeStd = 5.005161046981812; SleepCycleTimeSum = 5.005161046981812; SubmitCycleTimeAvg = 5.660372018814087; SubmitCycleTimeCount = 2.0; SubmitCycleTimeMax = 6.117829084396362; SubmitCycleTimeMin = 5.202914953231812; SubmitCycleTimeStd = 0.6469419863498522; SubmitCycleTimeSum = 11.32074403762817; ]
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_143 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_143 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122111.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_144 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_144 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122112.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_145 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_145 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122113.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_146 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_146 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122114.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_147 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_147 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122115.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_148 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_148 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122116.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_149 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_149 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122117.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_150 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_150 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122118.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_151 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_151 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122119.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_152 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_152 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122120.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_153 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_153 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122121.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_154 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_154 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122122.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_155 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_155 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:04 	assigned HTCondor ID (122123.0.0)
+03/21/24 12:06:04 Submitting HTCondor Node EVENT_156 job(s)...
+03/21/24 12:06:04 Submitting node EVENT_156 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122124.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_157 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_157 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122125.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_158 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_158 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122126.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_159 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_159 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122127.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_160 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_160 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122128.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_161 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_161 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122129.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_162 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_162 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122130.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_163 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_163 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122131.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_164 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_164 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122132.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_165 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_165 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122133.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_166 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_166 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122134.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_167 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_167 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122135.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_168 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_168 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122136.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_169 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_169 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122137.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_170 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_170 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122138.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_171 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_171 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122139.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_172 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_172 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122140.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_173 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_173 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122141.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_174 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_174 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:05 	assigned HTCondor ID (122142.0.0)
+03/21/24 12:06:05 Submitting HTCondor Node EVENT_175 job(s)...
+03/21/24 12:06:05 Submitting node EVENT_175 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122143.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_176 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_176 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122144.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_177 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_177 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122145.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_178 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_178 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122146.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_179 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_179 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122147.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_180 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_180 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122148.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_181 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_181 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122149.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_182 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_182 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122150.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_183 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_183 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122151.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_184 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_184 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122152.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_185 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_185 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122153.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_186 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_186 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122154.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_187 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_187 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122155.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_188 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_188 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122156.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_189 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_189 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122157.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_190 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_190 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122158.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_191 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_191 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122159.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_192 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_192 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122160.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_193 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_193 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:06 	assigned HTCondor ID (122161.0.0)
+03/21/24 12:06:06 Submitting HTCondor Node EVENT_194 job(s)...
+03/21/24 12:06:06 Submitting node EVENT_194 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:07 	assigned HTCondor ID (122162.0.0)
+03/21/24 12:06:07 Submitting HTCondor Node EVENT_195 job(s)...
+03/21/24 12:06:07 Submitting node EVENT_195 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:07 	assigned HTCondor ID (122163.0.0)
+03/21/24 12:06:07 Submitting HTCondor Node EVENT_196 job(s)...
+03/21/24 12:06:07 Submitting node EVENT_196 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:07 	assigned HTCondor ID (122164.0.0)
+03/21/24 12:06:07 Submitting HTCondor Node EVENT_197 job(s)...
+03/21/24 12:06:07 Submitting node EVENT_197 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:07 	assigned HTCondor ID (122165.0.0)
+03/21/24 12:06:07 Submitting HTCondor Node EVENT_198 job(s)...
+03/21/24 12:06:07 Submitting node EVENT_198 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:07 	assigned HTCondor ID (122166.0.0)
+03/21/24 12:06:07 Submitting HTCondor Node EVENT_199 job(s)...
+03/21/24 12:06:07 Submitting node EVENT_199 from file Single-Gaussian-pp-plot.sub using direct job submission
+03/21/24 12:06:08 	assigned HTCondor ID (122167.0.0)
+03/21/24 12:06:08 Just submitted 57 jobs this cycle...
+03/21/24 12:06:08 Currently monitoring 1 HTCondor log file(s)
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_5 (121973.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 142
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_3 (121971.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 141
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_10 (121978.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 140
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_15 (121983.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 139
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_7 (121975.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 138
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_17 (121985.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 137
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_1 (121969.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 136
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_11 (121979.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 135
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_2 (121970.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 134
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_8 (121976.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 133
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_20 (121988.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 132
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_18 (121986.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 131
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_4 (121972.0.0) {03/21/24 12:06:01}
+03/21/24 12:06:08 Number of idle job procs: 130
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_21 (121989.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 129
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_24 (121992.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 128
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_27 (121995.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 127
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_25 (121993.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 126
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_30 (121998.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 125
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_28 (121996.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 124
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_9 (121977.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 123
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_12 (121980.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 122
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_31 (121999.0.0) {03/21/24 12:06:02}
+03/21/24 12:06:08 Number of idle job procs: 121
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_33 (122001.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 120
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_36 (122004.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 119
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_0 (121968.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 118
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_14 (121982.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 117
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_6 (121974.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 116
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_39 (122007.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 115
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_46 (122014.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 114
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_22 (121990.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 113
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_43 (122011.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 112
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_42 (122010.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 111
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_37 (122005.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 110
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_40 (122008.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 109
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_35 (122003.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 108
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_45 (122013.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 107
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_32 (122000.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 106
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_13 (121981.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 105
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_16 (121984.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 104
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_23 (121991.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 103
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_34 (122002.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 102
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_44 (122012.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 101
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_38 (122006.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 100
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_41 (122009.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 99
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_47 (122015.0.0) {03/21/24 12:06:03}
+03/21/24 12:06:08 Number of idle job procs: 98
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_48 (122016.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 97
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_19 (121987.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 96
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_29 (121997.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 95
+03/21/24 12:06:08 Event: ULOG_EXECUTE for HTCondor Node EVENT_26 (121994.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 94
+03/21/24 12:06:08 Reassigning the id of job EVENT_143 from (122111.0.0) to (122111.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_143 (122111.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 95
+03/21/24 12:06:08 Reassigning the id of job EVENT_144 from (122112.0.0) to (122112.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_144 (122112.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 96
+03/21/24 12:06:08 Reassigning the id of job EVENT_145 from (122113.0.0) to (122113.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_145 (122113.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 97
+03/21/24 12:06:08 Reassigning the id of job EVENT_146 from (122114.0.0) to (122114.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_146 (122114.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 98
+03/21/24 12:06:08 Reassigning the id of job EVENT_147 from (122115.0.0) to (122115.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_147 (122115.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 99
+03/21/24 12:06:08 Reassigning the id of job EVENT_148 from (122116.0.0) to (122116.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_148 (122116.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 100
+03/21/24 12:06:08 Reassigning the id of job EVENT_149 from (122117.0.0) to (122117.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_149 (122117.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 101
+03/21/24 12:06:08 Reassigning the id of job EVENT_150 from (122118.0.0) to (122118.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_150 (122118.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 102
+03/21/24 12:06:08 Reassigning the id of job EVENT_151 from (122119.0.0) to (122119.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_151 (122119.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 103
+03/21/24 12:06:08 Reassigning the id of job EVENT_152 from (122120.0.0) to (122120.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_152 (122120.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 104
+03/21/24 12:06:08 Reassigning the id of job EVENT_153 from (122121.0.0) to (122121.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_153 (122121.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 105
+03/21/24 12:06:08 Reassigning the id of job EVENT_154 from (122122.0.0) to (122122.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_154 (122122.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 106
+03/21/24 12:06:08 Reassigning the id of job EVENT_155 from (122123.0.0) to (122123.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_155 (122123.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 107
+03/21/24 12:06:08 Reassigning the id of job EVENT_156 from (122124.0.0) to (122124.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_156 (122124.0.0) {03/21/24 12:06:04}
+03/21/24 12:06:08 Number of idle job procs: 108
+03/21/24 12:06:08 Reassigning the id of job EVENT_157 from (122125.0.0) to (122125.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_157 (122125.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 109
+03/21/24 12:06:08 Reassigning the id of job EVENT_158 from (122126.0.0) to (122126.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_158 (122126.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 110
+03/21/24 12:06:08 Reassigning the id of job EVENT_159 from (122127.0.0) to (122127.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_159 (122127.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 111
+03/21/24 12:06:08 Reassigning the id of job EVENT_160 from (122128.0.0) to (122128.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_160 (122128.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 112
+03/21/24 12:06:08 Reassigning the id of job EVENT_161 from (122129.0.0) to (122129.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_161 (122129.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 113
+03/21/24 12:06:08 Reassigning the id of job EVENT_162 from (122130.0.0) to (122130.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_162 (122130.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 114
+03/21/24 12:06:08 Reassigning the id of job EVENT_163 from (122131.0.0) to (122131.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_163 (122131.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 115
+03/21/24 12:06:08 Reassigning the id of job EVENT_164 from (122132.0.0) to (122132.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_164 (122132.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 116
+03/21/24 12:06:08 Reassigning the id of job EVENT_165 from (122133.0.0) to (122133.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_165 (122133.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 117
+03/21/24 12:06:08 Reassigning the id of job EVENT_166 from (122134.0.0) to (122134.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_166 (122134.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 118
+03/21/24 12:06:08 Reassigning the id of job EVENT_167 from (122135.0.0) to (122135.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_167 (122135.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 119
+03/21/24 12:06:08 Reassigning the id of job EVENT_168 from (122136.0.0) to (122136.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_168 (122136.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 120
+03/21/24 12:06:08 Reassigning the id of job EVENT_169 from (122137.0.0) to (122137.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_169 (122137.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 121
+03/21/24 12:06:08 Reassigning the id of job EVENT_170 from (122138.0.0) to (122138.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_170 (122138.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 122
+03/21/24 12:06:08 Reassigning the id of job EVENT_171 from (122139.0.0) to (122139.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_171 (122139.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 123
+03/21/24 12:06:08 Reassigning the id of job EVENT_172 from (122140.0.0) to (122140.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_172 (122140.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 124
+03/21/24 12:06:08 Reassigning the id of job EVENT_173 from (122141.0.0) to (122141.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_173 (122141.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 125
+03/21/24 12:06:08 Reassigning the id of job EVENT_174 from (122142.0.0) to (122142.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_174 (122142.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 126
+03/21/24 12:06:08 Reassigning the id of job EVENT_175 from (122143.0.0) to (122143.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_175 (122143.0.0) {03/21/24 12:06:05}
+03/21/24 12:06:08 Number of idle job procs: 127
+03/21/24 12:06:08 Reassigning the id of job EVENT_176 from (122144.0.0) to (122144.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_176 (122144.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 128
+03/21/24 12:06:08 Reassigning the id of job EVENT_177 from (122145.0.0) to (122145.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_177 (122145.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 129
+03/21/24 12:06:08 Reassigning the id of job EVENT_178 from (122146.0.0) to (122146.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_178 (122146.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 130
+03/21/24 12:06:08 Reassigning the id of job EVENT_179 from (122147.0.0) to (122147.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_179 (122147.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 131
+03/21/24 12:06:08 Reassigning the id of job EVENT_180 from (122148.0.0) to (122148.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_180 (122148.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 132
+03/21/24 12:06:08 Reassigning the id of job EVENT_181 from (122149.0.0) to (122149.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_181 (122149.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 133
+03/21/24 12:06:08 Reassigning the id of job EVENT_182 from (122150.0.0) to (122150.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_182 (122150.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 134
+03/21/24 12:06:08 Reassigning the id of job EVENT_183 from (122151.0.0) to (122151.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_183 (122151.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 135
+03/21/24 12:06:08 Reassigning the id of job EVENT_184 from (122152.0.0) to (122152.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_184 (122152.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 136
+03/21/24 12:06:08 Reassigning the id of job EVENT_185 from (122153.0.0) to (122153.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_185 (122153.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 137
+03/21/24 12:06:08 Reassigning the id of job EVENT_186 from (122154.0.0) to (122154.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_186 (122154.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 138
+03/21/24 12:06:08 Reassigning the id of job EVENT_187 from (122155.0.0) to (122155.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_187 (122155.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 139
+03/21/24 12:06:08 Reassigning the id of job EVENT_188 from (122156.0.0) to (122156.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_188 (122156.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 140
+03/21/24 12:06:08 Reassigning the id of job EVENT_189 from (122157.0.0) to (122157.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_189 (122157.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 141
+03/21/24 12:06:08 Reassigning the id of job EVENT_190 from (122158.0.0) to (122158.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_190 (122158.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 142
+03/21/24 12:06:08 Reassigning the id of job EVENT_191 from (122159.0.0) to (122159.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_191 (122159.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 143
+03/21/24 12:06:08 Reassigning the id of job EVENT_192 from (122160.0.0) to (122160.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_192 (122160.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 144
+03/21/24 12:06:08 Reassigning the id of job EVENT_193 from (122161.0.0) to (122161.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_193 (122161.0.0) {03/21/24 12:06:06}
+03/21/24 12:06:08 Number of idle job procs: 145
+03/21/24 12:06:08 Reassigning the id of job EVENT_194 from (122162.0.0) to (122162.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_194 (122162.0.0) {03/21/24 12:06:07}
+03/21/24 12:06:08 Number of idle job procs: 146
+03/21/24 12:06:08 Reassigning the id of job EVENT_195 from (122163.0.0) to (122163.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_195 (122163.0.0) {03/21/24 12:06:07}
+03/21/24 12:06:08 Number of idle job procs: 147
+03/21/24 12:06:08 Reassigning the id of job EVENT_196 from (122164.0.0) to (122164.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_196 (122164.0.0) {03/21/24 12:06:07}
+03/21/24 12:06:08 Number of idle job procs: 148
+03/21/24 12:06:08 Reassigning the id of job EVENT_197 from (122165.0.0) to (122165.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_197 (122165.0.0) {03/21/24 12:06:07}
+03/21/24 12:06:08 Number of idle job procs: 149
+03/21/24 12:06:08 Reassigning the id of job EVENT_198 from (122166.0.0) to (122166.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_198 (122166.0.0) {03/21/24 12:06:07}
+03/21/24 12:06:08 Number of idle job procs: 150
+03/21/24 12:06:08 Reassigning the id of job EVENT_199 from (122167.0.0) to (122167.0.0)
+03/21/24 12:06:08 Event: ULOG_SUBMIT for HTCondor Node EVENT_199 (122167.0.0) {03/21/24 12:06:08}
+03/21/24 12:06:08 Number of idle job procs: 151
+03/21/24 12:06:08 DAG status: 0 (DAG_STATUS_OK)
+03/21/24 12:06:08 Of 200 nodes total:
+03/21/24 12:06:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+03/21/24 12:06:08   ===     ===      ===     ===     ===        ===      ===      ===
+03/21/24 12:06:08     0       0      200       0       0          0        0        0
+03/21/24 12:06:08 0 job proc(s) currently held
+03/21/24 12:06:08 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 5.708212375640869; EventCycleTimeCount = 2.0; EventCycleTimeMax = 6.213200807571411; EventCycleTimeMin = 5.203223943710327; EventCycleTimeStd = 0.714161489277695; EventCycleTimeSum = 11.41642475128174; LogProcessCycleTimeAvg = 0.05372750759124756; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.05556797981262207; LogProcessCycleTimeMin = 0.05188703536987305; LogProcessCycleTimeStd = 0.002602820776638772; LogProcessCycleTimeSum = 0.1074550151824951; SleepCycleTimeAvg = 5.005132555961609; SleepCycleTimeCount = 2.0; SleepCycleTimeMax = 5.005161046981812; SleepCycleTimeMin = 5.005104064941406; SleepCycleTimeStd = 4.029238717641469E-05; SleepCycleTimeSum = 10.01026511192322; SubmitCycleTimeAvg = 5.137052694956462; SubmitCycleTimeCount = 3.0; SubmitCycleTimeMax = 6.117829084396362; SubmitCycleTimeMin = 4.090414047241211; SubmitCycleTimeStd = 1.015310943021668; SubmitCycleTimeSum = 15.41115808486938; ]
+03/21/24 12:06:13 Currently monitoring 1 HTCondor log file(s)
